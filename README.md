@@ -4,7 +4,9 @@ It is an asset management system using Java servelet to handle request and respo
 The Database used is MS SQL Server
 
 Access:
+
 http://kccoding.ca-central-1.elasticbeanstalk.com/
+
 "Admin user": user name: test, password: test
 OR
 "Operational user": username: JSmith, password: password.
