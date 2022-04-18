@@ -8,5 +8,7 @@ Access:
 http://kccoding.ca-central-1.elasticbeanstalk.com/
 
 "Admin user": user name: test, password: test
+
 OR
+
 "Operational user": username: JSmith, password: password.
