@@ -1,0 +1,16 @@
+<head>
+    <script src="https://kit.fontawesome.com/2236093b8b.js" crossorigin="anonymous"></script>
+</head>
+<div class="wrapper">
+    <div id="sideBar" class="sidebar">
+        <ul>
+            <li><a href="/pageNavigation?targetPage=homePage"><i class="fa-solid fa-house-user"></i>Home</a></li>
+            <li><a href="/pageNavigation?targetPage=manageAsset"><i class="fa-solid fa-bars-progress"></i>Manage Asset</a></li>
+            <li><a href="/pageNavigation?targetPage=manageDepreciation"><i class="fa-solid fa-calculator"></i>Manage Depreciation</a></li>
+            <li><a href="/pageNavigation?targetPage=reports"><i class="fa-solid fa-chart-area"></i>Reports</a></li>
+            <li><a href="/pageNavigation?targetPage=users"><i class="fa-solid fa-users"></i>Users</a></li>
+            <li><a href="/authenticateUser?action=logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+        </ul>
+    </div>
+</div>
+

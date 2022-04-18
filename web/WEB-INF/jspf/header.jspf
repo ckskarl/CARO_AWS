@@ -1,0 +1,12 @@
+<div class="header">
+    <img src="caroLogo.png" alt="logo"> 
+    
+    <div style="text-align: left; position: absolute; bottom: 0; right: 0; padding: 5px; background-color: white; box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5); border-radius: 6px; border: none; margin-right: 30px; margin-bottom: 10px;">
+        <form action="/AccountController">
+            <button style="border: none; background-color: white; cursor: pointer;">
+                <a style="margin-top: 40%; font-weight: bold; font-size: 13px;">${sessionScope.name}</a>
+                <img style="margin: 0px; width:35px; height:35px;" src="usericon.png" alt="logo"> 
+            </button>
+        </form>
+    </div>
+</div>

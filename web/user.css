@@ -1,0 +1,697 @@
+body{
+    position: fixed;
+}
+
+/*Header jspf*/
+.header{
+    position:fixed;
+    top: 0;
+    width:100%;  
+    background-color: aliceblue;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+.header img{
+    margin-top: 10px; 
+    margin-left: 50px; 
+    margin-bottom: 10px; 
+    width: 200px; 
+    height:80px;
+}
+
+
+/*All*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+/*Sidebar jspf*/
+.wrapper .sidebar{
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
+  top:108px;
+  background: #19607f;
+  padding: 10px 0;
+}
+.wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.wrapper .sidebar ul li a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.wrapper .sidebar ul li a .fa-solid{
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #2d3b55;
+  transition: ease-out 0.2s;
+  color: black;
+}
+
+/*User page */
+.user{
+  margin-left: 210px; 
+  padding: 0px 5px;
+}
+
+
+
+.topbar{
+    padding: 5px 5px;
+    margin-top: 22px;
+    font-weight: bold;
+    width: 88%;
+    height: 30px;
+    position: fixed;
+    overflow: hidden;
+    top: 87px;
+    z-index: 1;
+    background-color: white;
+    border:  1px solid black;
+    border-radius: 4px;
+}
+
+.topbar a{
+  display: inline;
+  color: black;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  
+}
+
+.topbar a:hover {
+  background-color: #eeeeee;
+  
+}
+
+
+.undertopbar{
+  margin-top: 60px;
+  width: 100%;
+  height: 32px;
+  position: fixed;
+  overflow: hidden;
+  top:100px;
+  z-index: 1;
+  background-color: white;
+  
+}
+
+.undertopbar a{
+  display: inline;
+  color: black;
+  padding: 0 15px 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+.undertopbar input{
+   font-size: 20px;
+}
+
+.undertopbar a:hover {
+  background-color: #eeeeee;;
+  
+}
+
+.adduser-bg input[type=text]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.adduser-bg label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.adduser-bg input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.adduser-bg .row button{
+    background-color: #ccc;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.adduser-bg input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+/*Add user form*/
+.adduser-bg{
+    top: 130px;
+    width: 600px;
+    height: auto;
+    visibility: hidden;
+    position: fixed;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    
+    font-size: 15px;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    margin-left: 500px;
+    
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+.adduser-bg .col-1{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.adduser-bg .col-2{
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.adduser-bg .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.editUser-bg input[type=text]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.editUser-bg label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.editUser-bg input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.editUser-bg input[type=reset]{
+    background-color: #ccc;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.editUser-bg input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.editUser-bg .row button{
+    background-color: #ccc;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+/*Add edit form*/
+.editUser-bg{
+    top: 140px;
+    width: 600px;
+    height: auto;
+    visibility: hidden;
+    position: fixed;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    
+    font-size: 15px;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    margin-left: 400px;
+    
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+.editUser-bg .col-1{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.editUser-bg .col-2{
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.editUser-bg .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Add delete form*/
+.deleteUser-bg{
+    top: 150px;
+    width: 500px;
+    height: auto;
+    visibility: hidden;
+    position: fixed;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    
+    font-size: 15px;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    margin-left: 400px;
+    
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+.deleteUser-bg input[type=reset]{
+    background-color: #ccc;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deleteUser-bg input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deleteUser-bg input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.notes{
+    margin-left: 220px;
+    margin-top: 190px;
+    color: green;
+    font-size: 15px;
+    position: fixed;
+}
+
+.userlist{
+    font-size: 15px;
+    padding: 8px;
+    margin-left: 210px;
+    margin-top: 220px;
+    width: 120%;
+    height: 630px;
+    border-radius: 4px;
+    color: green;
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.userlist button {
+    background-color: #666666;
+    color: white;
+    padding: 9px;
+    border: none;
+    border-radius: 4px;
+    width: auto;
+    cursor: pointer;
+}
+
+.userlist .edit{
+    background-color: #04AA6D;
+}
+
+.userlist .delete{
+    background-color: #f44336;
+    
+}
+
+.userlist .sortable{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    color: black;
+    column-width: 20px;
+}
+
+.userlist .sortable tr:hover{
+    background-color: #ddd;
+}
+
+.userlist .sortable tbody td{
+    overflow: auto;
+}
+
+.userlist .sortable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+}
+
+.userlist .sortable tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.userlist .sortable thead th {
+    background-color: cadetblue;
+    border: 1px solid #dddddd;
+    font: bold;
+    color: white;
+    height: 60px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.userlist .sortable th:nth-child(1){
+    background-color: cadetblue;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+.developer {
+    display :none;
+}
+
+
+.backup-bg input[type=file]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.backup-bg input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.backup-bg label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.backup-bg input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.backup-bg input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.backup-bg .row button{
+    background-color: #ccc;
+    color: black;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+
+.backup-bg{
+    top: 150px;
+    width: 850px;
+    height: auto;
+    visibility: hidden;
+    position: fixed;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    
+    font-size: 15px;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    margin-left: 320px;
+    
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.restore-bg input[type=file]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.restore-bg input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.restore-bg label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.restore-bg input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.restore-bg input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.restore-bg .row button{
+    background-color: #ccc;
+    color: black;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+.restore-bg{
+    top: 150px;
+    width: 850px;
+    height: auto;
+    visibility: hidden;
+    position: fixed;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    
+    font-size: 15px;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    margin-left: 320px;
+    
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+.clearArchive-bg input[type=file]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.clearArchive-bg input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.clearArchive-bg label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.clearArchive-bg input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.clearArchive-bg input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.clearArchive-bg .row button{
+    background-color: #ccc;
+    color: black;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+.clearArchive-bg{
+    top: 150px;
+    width: 850px;
+    height: auto;
+    visibility: hidden;
+    position: fixed;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    
+    font-size: 15px;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    margin-left: 320px;
+    
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+

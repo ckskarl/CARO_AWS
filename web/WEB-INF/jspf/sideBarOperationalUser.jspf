@@ -1,0 +1,13 @@
+<head>
+    <script src="https://kit.fontawesome.com/2236093b8b.js" crossorigin="anonymous"></script>
+</head>
+<div class="wrapper">
+    <div id="sideBar" class="sidebar">
+        <ul>
+            <li><a href="/pageNavigation?targetPage=homePage"><i class="fa-solid fa-house-user"></i>Home</a></li>
+            <li><a href="/pageNavigation?targetPage=manageAsset"><i class="fa-solid fa-bars-progress"></i>Manage Asset</a></li>
+            <li><a href="/authenticateUser?action=logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+        </ul>
+    </div>
+</div>
+
